@@ -34,14 +34,10 @@
   </span>
 
   <!-- Counter busuanzi -->
-  {{- if .Site.Params.counter.busuanzi.enable -}}
-    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <meta name="referrer" content="no-referrer-when-downgrade">
-  <div class="busuanzi-footer">
+  {{ if .Site.Params.counter.busuanzi.enable }}
     <span id="busuanzi_container">
       访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
     </span>
-  </div>
   {{ end }}
 
   {{ if .Site.Params.customFooter }}
