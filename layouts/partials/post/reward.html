@@ -7,13 +7,13 @@
     {{ with $qrCode.wechat }}
       <label class="qr-code-image" for="reward">
         <img class="image" src="{{ . }}">
-        <span>{{ i18n "rewardWechat" }}</span>
+        <span>{{ i18n "reward微信" }}</span>
       </label>
     {{- end }}
     {{ with $qrCode.alipay }}
       <label class="qr-code-image" for="reward">
         <img class="image" src="{{ . }}">
-        <span>{{ i18n "rewardAlipay" }}</span>
+        <span>{{ i18n "reward支付宝" }}</span>
       </label>
     {{- end }}
   </div>
