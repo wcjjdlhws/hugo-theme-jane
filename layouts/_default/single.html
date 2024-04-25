@@ -68,7 +68,38 @@
 
 
       <!-- Comments -->
-      {{ partial "comments.html" . }}
+      <!-- {{ partial "comments.html" . }} -->
+      <head>
+      <!-- ... -->
+      <link
+        rel="stylesheet"
+        href="https://unpkg.com/@waline/client@v3/dist/waline.css"
+      />
+      <!-- ... -->
+    </head>
+    <body>
+      <!-- ... -->
+      <div id="waline"></div>
+      <script type="module">
+        import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+
+        init({
+          el: '#waline',
+          reaction: true,
+          lang: 'zh',
+          comment: true,
+          dark: 'auto',
+          search: false,
+          serverURL: 'https://wcjjdlhws-comment-waline.vercel.app/',
+          //emoji: 贴吧与qq
+          emoji: [
+                '//unpkg.com/@waline/emojis@1.2.0/tieba',
+                '//unpkg.com/@waline/emojis@1.2.0/qq',
+          ],
+        });
+      </script>
+    </body>
+
 
     </div>
 
