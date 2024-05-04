@@ -17,7 +17,7 @@ categories: [""]
 toc: true
 autoCollapseToc: true
 # You can also define another contentCopyright. e.g. contentCopyright: "This is another copyright."
-contentCopyright: true
+#contentCopyright: true
 #reward: false
 mathjax: true
 
